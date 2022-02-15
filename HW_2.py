@@ -12,7 +12,10 @@ result_sum = item_1 + item_2
 print(result_sum)
 
 # 5. Создать переменную result_subtr в которой вы вычитаете большую по значению переменную из меньшей по значению.
-result_subtr = item_2 - item_1
+if item_1 > item_2:
+    result_subtr = item_2 - item_1
+else:
+    result_subtr = item_1 - item_2
 # 6. Вывести result_subtr в консоль.
 print(result_subtr)
 
@@ -45,7 +48,7 @@ print(result_mp_s_root)
 item_1 = 43
 
 # 20. Присвоить переменной item_2 even значение
-item_2 = 15
+item_2 = 14
 
 # 21. Создать переменную result_division в которой вы разделите item_1 на item_2.
 result_division = item_1 / item_2
@@ -63,7 +66,7 @@ result_m_ceil = math.ceil(result_division)
 print(result_m_ceil)
 
 # 27. Создать переменную result_int и result_division округлить до ближайшего целого через явное приведение.
-result_int = round(result_division)
+result_int = int(round(result_division))
 # 28. Вывести result_int в консоль.
 print(result_int)
 

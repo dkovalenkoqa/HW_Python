@@ -39,7 +39,7 @@ usd_byn_rate = 2.46
 
 # 20. Сделать if в котором будет условие: если mult_int больше comp_item, то вывести в консоль (“Переменная mult_int больше”, comp_item)
 if mult_int > comp_item:
-    print('Переменная mult_int больше', comp_item)
+    print('Переменная mult_int больше или равно', comp_item)
 
 # 21. Создать переменную div_int в которй разделить int_item на 2
 div_int = int_item / 2

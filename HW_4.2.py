@@ -20,4 +20,5 @@ rates = {"USD": 26.23,
 print(f'Ты ввёл {money}{"₴"}')
 
 for key, value in rates.items():
-    print(f'Конвертированная сумма в {key} = {round(money / value)}')
+    result = money / value
+    print(f'Конвертированная сумма в {key} = {round(result, 2)}')
