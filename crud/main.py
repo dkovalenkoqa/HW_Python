@@ -1,5 +1,6 @@
 from create_1 import create_user
 from read_1 import user_info, all_users_info
+from update_1 import update_user
 
 user_emails = []
 users_storage = {}
@@ -24,8 +25,8 @@ while True:
                     user_emails,
                     users_storage)
 
-        print('users_email', user_emails)
-        print('users_storage', users_storage)
+        print('users_email: ', user_emails)
+        print('users_storage: ', users_storage)
 
     elif action == 'read_all':
         print('action = ', action)
@@ -41,6 +42,14 @@ while True:
 
     elif action == 'update':
         print('action = ', action)
+
+        user_e = input('Enter email of user you want to update: ')
+        user_item = input('Enter user info you want to change: ')
+        new_item = input(f'Enter new {user_item}: ')
+
+        update_user(user_e, user_item, new_item, users_storage)
+
+        print(user_info(user_e, user_emails, users_storage))
 
     elif action == 'delete':
         print('action = ', action)

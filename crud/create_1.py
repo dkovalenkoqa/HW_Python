@@ -8,6 +8,4 @@ def create_user(email, name, password, phone, user_emails, users_storage):
                             'phone': phone
                             }
 
-    print(user_info)
-
     return None
