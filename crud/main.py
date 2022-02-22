@@ -1,6 +1,7 @@
 from create_1 import create_user
 from read_1 import user_info, all_users_info
 from update_1 import update_user
+from delete_1 import delete_user
 
 user_emails = []
 users_storage = {}
@@ -53,6 +54,10 @@ while True:
 
     elif action == 'delete':
         print('action = ', action)
+        user_e = input('Enter email of user you want to delete: ')
+
+        print(delete_user(user_e, users_storage))
+
 
     else:
         print('Please enter create or read, or update, or delete')
